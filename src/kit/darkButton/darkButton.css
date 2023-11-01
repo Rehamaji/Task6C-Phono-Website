@@ -1,0 +1,15 @@
+.width30{
+    width: 30%;
+
+}
+.btnStyle{
+    border: 3px var(--blue) solid;
+}
+.borderRadius{
+    border-radius: 30px !important;
+}
+.bgHov:hover{
+    background: var(--rose) !important;
+    color: var(--white) !important;
+    border: var(--rose) !important;
+}

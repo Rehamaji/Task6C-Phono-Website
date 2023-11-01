@@ -1,0 +1,18 @@
+.colorOnHover:hover {
+    color: var(--rose) !important;
+}
+.ima {
+    width: 67px;    object-fit: cover;
+
+    height: 84px;
+    padding-top: 5%;
+    margin: auto;
+}
+.fs-header{
+    font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+.ima {
+    height: 117px;
+}}
+

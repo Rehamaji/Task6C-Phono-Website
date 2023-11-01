@@ -1,0 +1,12 @@
+.rating {
+    font-size: 2rem;
+}
+.star {
+    color: var(--lightGray);
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.star.colored {
+    color: var(--lightGray);
+}

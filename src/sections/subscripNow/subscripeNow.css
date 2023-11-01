@@ -1,0 +1,76 @@
+
+.ButtonCycle {
+    position: absolute;
+    left:92%;
+    top: 7%;
+}
+.block:after {
+    content: "|";
+    color: #fff;
+    padding-inline: 15px;
+}
+.cursor {
+    cursor: pointer;
+}
+.transition {
+    transition: 0.5s;
+}
+.hov:hover {
+    color: var(--rose) !important;
+}
+.radius30{
+    border-radius: 30px !important;
+}
+.w-fit {
+    width: fit-content !important;
+}
+
+@media (min-width: 1239px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 90%;
+        top: 7%;
+    }
+}
+@media (max-width: 1230px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 89%;
+        top: 7%;
+    }
+}
+@media (max-width: 1070px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 87%;
+        top: 7%;
+    }
+}
+@media (max-width: 899px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 83%;
+        top: 7%;
+    }
+}
+@media (max-width: 655px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 76%;
+        top: 7%;
+    }
+}
+@media (max-width: 492px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 67%;
+        top: 7%;
+    }
+}
+@media (max-width: 360px) {
+    .ButtonCycle {
+        position: absolute;
+        left: 56%;
+        top: 7%;
+    }
+}

@@ -1,0 +1,10 @@
+.section-4 {
+    height: max-content;
+    padding: 4rem 0;
+    background-image: url('../../assets/images/section4bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: #fff;
+}

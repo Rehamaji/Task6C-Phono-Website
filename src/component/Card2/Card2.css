@@ -1,0 +1,17 @@
+.iconHover:hover{
+    transform: scale(1.1) translateY(-3px);
+  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+}
+.cardHover:hover{
+    border: 1px solid var(--blue) !important;
+    z-index: 100;
+    border-radius: 20px;
+    transform: skewX(1deg) translateY(-5px) scale(1.02);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.colorBorder{
+    border:1px var(--rose) solid !important;
+}
+.colorBlue{
+    color:#132043 !important;
+}

@@ -1,0 +1,16 @@
+.colorOnHover:hover {
+    color: var(--rose) !important;
+}
+.ima {
+    width: 67px;
+    object-fit: cover;
+    height: 84px !important;
+    padding-top: 5%;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .ima {
+        height: 117px;
+    }
+}
+

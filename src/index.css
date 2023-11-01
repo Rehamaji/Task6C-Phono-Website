@@ -1,8 +1,10 @@
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,80 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*------------------------------------*/
+:root {
+  --blue: #132043;
+  --white: #ffffff;
+  --rose:#F1B4BB;
+ --lightGray: #797070;
+  --red:#BB2525;
+  /* --black:#000000;
+  --Darkblue:#0000FFFF;*/
+}
+/*------------------------------------*/
+.colorBlue{
+  color: var(--blue) !important;
+  background: transparent;
+}
+.colorWhite{
+  color: var(--white) !important;
+}
+.colorRose{
+  color: var(--rose) !important;
+}
+.colorLightGray{
+  color: var(--lightGray) !important;
+}
+/*---bg----*/
+.bgBlue{
+  background-color: var(--blue) !important;
+}
+.bgWhite{
+  background-color: var(--white) !important;
+}
+.bgRose{
+  background-color: var(--white) !important;
+}
+.bgLightGray{
+  background-color: var(--lightGray) !important;
+}
+.bg-transparent{
+  background: transparent;
+}
+
+.backgroundSec {
+  height: max-content;
+  background-image: url("./assets/images/background.png");
+}
+
+/*------------------------------------*/
+.fw-400{
+  font-weight: 400;
+}
+.fw-600{
+  font-weight:600;
+}
+.fw-700{
+  font-weight:700;
+}
+.fw-800{
+  font-weight:800;
+}
+.fs1-4{
+  font-size: 1.4rem;
+}
+.w-90{
+  width: 90% !important;
+}
+.letterSpac {
+  letter-spacing: 5px;
+}
+
+.borderRadius10{
+  border-radius: 15px !important;
+}
+.posRelative{
+  position: relative;
 }

@@ -1,0 +1,67 @@
+.setImg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vw;
+    margin-bottom: 13%;
+}
+
+.vh100 {
+    height: 100vh !important;
+}
+
+.custom-carousel-item h3, .custom-carousel-item p {
+    margin: 0; /* Remove default margin for the header and description */
+}
+
+/*-----------------------------Text In Hero--------------------------*/
+.txt-hero {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-content: center !important;
+    height: 100% !important;
+}
+
+.txt1-hero {
+    top: 24% !important;
+    left: 27% !important;
+}
+
+.txt2-hero {
+    align-items: flex-start !important;
+    left: 9% !important;
+    top: -10% !important;
+}
+
+.rem3 {
+    font-size: 3rem;
+}
+
+.rem2 {
+    font-size: 2rem;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+@media (max-width: 900px) {
+    .my-fs-4 {
+        font-size: 4px !important;
+    }
+}
+
+@media (max-width: 992px)
+
+.carousel-item .hero-content.left .main-title, .carousel-item .hero-content.right .main-title {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    width: max-content;
+}

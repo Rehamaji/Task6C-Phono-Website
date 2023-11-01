@@ -1,0 +1,21 @@
+.my-header button {
+    background-color: transparent !important;
+    color: var(--rose);
+}
+.accordion-button:not(.collapsed){
+    color: var(--rose) !important;
+}
+
+.accordion-body{
+    color: white;
+}
+
+/*
+.my-header button .accordion-button::after {
+    color: var(--rose) !important;
+}
+*/
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--rose) !important;
+}

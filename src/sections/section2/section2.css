@@ -1,0 +1,7 @@
+.onHover:hover{
+    background: var(--blue);
+    color: var(--white);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px) scale(1.05);
+    border-radius: 10px;
+}

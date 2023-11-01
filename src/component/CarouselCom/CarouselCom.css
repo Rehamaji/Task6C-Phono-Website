@@ -1,0 +1,45 @@
+
+.h-fit-content {
+    height: fit-content;
+}
+
+/*--------------------------Button in card---------------------------*/
+.parentButton {
+    position: relative;
+    width: 450px;
+    height: 300px;
+}
+.buttonHover{
+    position: absolute;
+    width: 100% !important;
+    left: 0;
+    top: 270px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    color: white;
+    background-color: black;
+    z-index: 1;
+    padding: 3% 3%;
+}
+.parentButton:hover .buttonHover {
+    opacity: 1;
+}
+.bghov:hover {
+    background-color: red !important;
+}
+.bg-light-gray{
+    background-color: #f3f3f3;
+}
+.color-black {
+    color: black !important;
+}
+.card-hover:hover{
+    border: 2px solid red;
+}
+.h300{
+    height: 300px !important
+}
+.fs14 {
+    font-size: 1.4rem !important;
+}

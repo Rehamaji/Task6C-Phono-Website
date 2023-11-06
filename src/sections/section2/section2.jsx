@@ -6,7 +6,7 @@ import './section2.css';
 import Headers from './../../component/headers/headers'
 function Section2() {
     return (
-        <div>
+        <div className="backgroundSec">
         <Headers first="OSSIBILITIES. PERFORMANCE. POWER." second="FASTER PROCESSING WITH LESS POWER"/>
             <div
                 className="mx-5 pt-2 d-flex row justify-content-lg-around justify-content-md-center justify-content-md-around-1 ">

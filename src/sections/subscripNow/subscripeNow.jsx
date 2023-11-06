@@ -6,8 +6,8 @@ import { faBuildingCircleArrowRight } from '@fortawesome/free-solid-svg-icons'; 
 
 const SubscripeNow = () => {
     return (
-        <div className="W-100">
-                <div className="bgBlue pt-5">
+        <div className="">
+                <div className="bgBlue pt-5 pb-5">
                     <div className="d-flex flex-column justify-content-center">
                         <p className="card-text text-center pt-3 fw-600 fs14 colorRose">
                             SUBSCRIBE NOW</p>
@@ -24,7 +24,7 @@ const SubscripeNow = () => {
                     </span>
                             </div>
                         </div>
-                        <div className="row w100 justify-content-center pt-5">
+                        <div className="row w100 justify-content-center pt-5 m-0">
                             <p className="col-md-1 col-sm-12 transition cursor colorWhite block hov">SEARCH</p>
                             <p className="col-md-1 col-sm-12 transition cursor colorWhite block hov">HELP </p>
                             <p className="col-md-2 col-sm-12 transition cursor colorWhite block hov">INFORMATION </p>

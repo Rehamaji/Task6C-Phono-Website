@@ -2,14 +2,8 @@ import'./Card1.css';
 
 function AccordionSec(props){
     return(
-        <div className="">
-         {/*   <div className="w-100 text-center">
-                <h1 className="color-white">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
-            </div>
-            <p className="card-text row text-center pt-3 fs14 w100 "><small className="text-muted">SHOW YOURS TO THE WORLD</small></p>
-           */}
+        <div className="mx-5 pb-5">
             <Headers first="SEE WHY CUSTOMERS LOVE THE OUR MOBILES" second="SHOW YOURS TO THE WORLD"/>
-
             <div className="row w-100">
                 <div className="col-lg-5 text-center ">
                     <img  src="//phono-demo.myshopify.com/cdn/shop/files/bg-1.png?v=1613702304&amp;width=1500"

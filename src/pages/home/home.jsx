@@ -39,7 +39,6 @@ function Home() {
             <OccordionSec/>
             <CarouselSec/>
             <SubscripeNow/>
-            <Footer/>
         </div>
     );
 }

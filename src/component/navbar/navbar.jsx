@@ -12,8 +12,14 @@ import './navbar.css';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import flags from '../../assets/all.json'
 import Logo from '../../assets/images/logo.png';
+import DropdownNav from "../dropdown/dropdown";
+import SidebarNav from '../SidbarNav/SidbarNav';
+
 import {Dropdown} from "react-bootstrap";
 import axios from "axios";
+import Iphone14 from '../../assets/images/iphone14.png';
+import useMediaQuery from './useMediaQuery'; // Create or import a hook to handle media queries
+
 import Flag from "./flag/flag"; // Use two levels of '../' to go up to the 'src' directory
 
 
@@ -21,6 +27,9 @@ const AllNavbar = () => {
     const [show, setShow] = useState(false);
     const [activeFlag, setActiveFlag] = useState({name:flags[0].cca2,flagImage: flags[0].flags.png });
     const [pages, setPages] = useState(false);
+    const isSmallScreen = useMediaQuery('(max-width: 767px)'); // Define your breakpoint here (e.g., 767px)
+
+
     const showDropdown = (e) => {
         setShow(true);
     };
@@ -37,50 +46,32 @@ const AllNavbar = () => {
     };
     return (
         <div>
-            <Navbar expand="lg" className="bg-body-tertiary pos-fixed w-100 z-10">
+            <Navbar expand="lg" className="bg-body-tertiary position-fixed w-100 z-100">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img src={Logo} alt="Banner Background"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mx-auto padding-nav bg-blue color-white mt-1">
-                            <Nav.Link href="#home" className="colorWhite fw-500">
+                        <Nav className="mx-auto padding-nav color-white mt-1">
+                            <Nav.Link href="#home" className="colorWhite fw-500 colorGray">
                                 <Link to="/">Home</Link>
                             </Nav.Link>
-                            <NavDropdown title="Collection"
-                                         id="collectionDropdown"
-                                         className="colorWhite fw-500"
-                                         show={show}
-                                         onMouseEnter={showDropdown}
-                                         onMouseLeave={hideDropdown}>
-                                {/*toedite*/}
-                                <NavDropdown.Item
-                                    as={Link}
-                                    to="/contests"
-                                    className="colorBlack colorBlueOnHover move-text"
-                                    onMouseEnter={showDropdown} // Show the dropdown on hover
-                                >CONTESTS</NavDropdown.Item>
-                                <NavDropdown.Divider/>
-                                <NavDropdown.Item
-                                    as={Link} to="./singleContests"
-                                    className="colorBlack colorBlueOnHover move-text"
-                                    onMouseEnter={showDropdown} // Show the dropdown on hover
-                                >
-                                    SINGLE CONTEST
-                                </NavDropdown.Item>
-                                {/*end toedite*/}
-                            </NavDropdown>
+
+                            <DropdownNav/>
+{/*
+                            {isSmallScreen ? <SidebarNav /> : <DropdownNav />}
+*/}
+
                             <Nav.Link as={Link} to="/categories" className="colorBlack fw-500">Shop</Nav.Link>
                             <Nav.Link as={Link} to="/users" className="colorBlack fw-500">Android</Nav.Link>
-                            <Nav.Link as={Link} to="/users" className="colorBlack fw-500">Accessories</Nav.Link>
-                            <Nav.Link as={Link} to="/users" className="colorBlack fw-500">Memory & Storage</Nav.Link>
+                            <Nav.Link as={Link} to="/feature" className="colorBlack fw-500">Memory & Storage</Nav.Link>
+                            <Nav.Link as={Link} to="/about" className="colorBlack fw-500">About</Nav.Link>
 
                             <NavDropdown title="Pages"
                                          id="basicDropdown"
                                          className="colorWhite fw-500"
                                          >
-
                                 <NavDropdown.Item
                                     as={Link}
                                     to="/contests"
@@ -113,27 +104,19 @@ const AllNavbar = () => {
                                 >
                                     Faq's
                                 </NavDropdown.Item>
-
                             </NavDropdown>
-
-
                         </Nav>
                     </Navbar.Collapse>
-                    {/*<Button variant="outline-success borderBlue colorBlue btn-sign-in pe-4 ps-4 pt-1 btnSearchHover" >*/}
-                    {/*    <FontAwesomeIcon icon={faUser}/>*/}
-                    {/*    <span className="fw-600"> Sign In/Up </span>*/}
-                    {/*</Button>*/}
 
-                    {/*----start----*/}
                     <div className="icons d-flex order-xl-3 order-sm-2 ">
                         <NavDropdown title={<Flag name={activeFlag.name} className="d-inline-block" flagImage={activeFlag.flagImage}></Flag>}
                                      id="flagDropDown"
-                                     className="black fw-500">
-
+                                     className="black fw-500 ">
+                            <div className="dropdown-list scrolOn300Px">
                             {flags.map((flag) => {
                                 return (
                                     <NavDropdown.Item
-                                        className="colorBlack colorBlueOnHover move-text"
+                                        className="colorBlack colorBlueOnHover move-text "
                                         onClick={() => setActiveFlag({name:flag.cca2, flagImage: flag.flags.png})}
                                         onMouseEnter={showPageList} // Show the dropdown on hover
                                     >
@@ -141,6 +124,7 @@ const AllNavbar = () => {
                                     </NavDropdown.Item>
                                 )
                             })}
+                            </div>
                         </NavDropdown>
                         <div className="px-1"><FontAwesomeIcon icon={faUser}/></div>
                         <div className="px-1"><FontAwesomeIcon icon={faCartShopping}/></div>

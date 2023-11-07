@@ -1,0 +1,17 @@
+.RA-h-10{
+    height: 10%;
+}
+.RA-WidthHeight{
+    width: 155px;
+    height: 159px;
+}
+.z-100{
+    z-index: 10000;
+}
+.scrolOn300Px{
+    max-height: 300px;
+    overflow-y: auto;
+}
+a{
+    text-decoration: none;
+}

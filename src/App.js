@@ -14,7 +14,7 @@ function App() {
             {/*    <Route path={'/categories'} element={<Section1/>}>Categories</Route>
               <Route path={'/users'} element={<Section1/>}></Route>*/}
           </Routes>
-           <Home/>
+         {/*  <Home/>*/}
       </>
   );
 }

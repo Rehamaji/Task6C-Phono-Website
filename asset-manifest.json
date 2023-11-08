@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Task6C-Phono-Website/static/css/main.6da4572d.css",
-    "main.js": "/Task6C-Phono-Website/static/js/main.517437c3.js",
+    "main.js": "/Task6C-Phono-Website/static/js/main.2d8d32e6.js",
     "static/js/787.76ddef2d.chunk.js": "/Task6C-Phono-Website/static/js/787.76ddef2d.chunk.js",
     "static/media/iphone14.png": "/Task6C-Phono-Website/static/media/iphone14.33b2a8d68473239455ac.png",
     "static/media/img1-2.png": "/Task6C-Phono-Website/static/media/img1-2.e9ddc4aa0472d3d85d9d.png",
@@ -20,11 +20,11 @@
     "static/media/revicons.woff": "/Task6C-Phono-Website/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Task6C-Phono-Website/index.html",
     "main.6da4572d.css.map": "/Task6C-Phono-Website/static/css/main.6da4572d.css.map",
-    "main.517437c3.js.map": "/Task6C-Phono-Website/static/js/main.517437c3.js.map",
+    "main.2d8d32e6.js.map": "/Task6C-Phono-Website/static/js/main.2d8d32e6.js.map",
     "787.76ddef2d.chunk.js.map": "/Task6C-Phono-Website/static/js/787.76ddef2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6da4572d.css",
-    "static/js/main.517437c3.js"
+    "static/js/main.2d8d32e6.js"
   ]
 }

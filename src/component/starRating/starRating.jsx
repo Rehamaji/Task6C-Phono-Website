@@ -16,7 +16,7 @@ const StarRating = ({rating}) => {
                                     className={`star ${index >= rating ? 'colored' : ''}`}
                                 >
                                    {index < rating ? '★' : '☆'}
-                  </span>
+                                </span>
                             );
                         })}
                     </div>

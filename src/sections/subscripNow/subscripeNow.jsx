@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import './subscripeNow.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuildingCircleArrowRight } from '@fortawesome/free-solid-svg-icons'; // Replace with the icon you want
+import { faBuildingCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const SubscripeNow = () => {
     return (

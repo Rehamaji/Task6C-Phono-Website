@@ -1,6 +1,5 @@
 import './mobileFeatures.css';
 import Mobile from '../../assets/images/mobile.png';
-import SmCard from '../../assets/images/smCard.png';
 import Card2 from "../../component/Card2/Card2";
 import Battery from '../../assets/images/battery.png';
 import Headers from "../../component/headers/headers";
@@ -9,9 +8,6 @@ import Headers from "../../component/headers/headers";
 function MobileFeatures(props) {
     return (
         <section className="mx-5 m-sectionF">
-           {/* <h1 className="text-center">POSSIBILITIES. PERFORMANCE. POWER.</h1>
-            <p className="card-text text-center pt-3 letterSpac"><small className="text-muted">FASTER PROCESSING WITH LESS
-                POWER</small></p>*/}
             <Headers first="POSSIBILITIES. PERFORMANCE. POWER." second="FASTER PROCESSING WITH LESS POWER"/>
             <div className="mr-auto pos-relative img-size con m-cards-parent">
                 <img sizes="100vw"

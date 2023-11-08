@@ -13,13 +13,6 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import flags from '../../assets/all.json'
 import Logo from '../../assets/images/logo.png';
 import DropdownNav from "../dropdown/dropdown";
-import SidebarNav from '../SidbarNav/SidbarNav';
-
-import {Dropdown} from "react-bootstrap";
-import axios from "axios";
-import Iphone14 from '../../assets/images/iphone14.png';
-import useMediaQuery from './useMediaQuery'; // Create or import a hook to handle media queries
-
 import Flag from "./flag/flag"; // Use two levels of '../' to go up to the 'src' directory
 
 
@@ -27,8 +20,6 @@ const AllNavbar = () => {
     const [show, setShow] = useState(false);
     const [activeFlag, setActiveFlag] = useState({name:flags[0].cca2,flagImage: flags[0].flags.png });
     const [pages, setPages] = useState(false);
-    const isSmallScreen = useMediaQuery('(max-width: 767px)'); // Define your breakpoint here (e.g., 767px)
-
 
     const showDropdown = (e) => {
         setShow(true);
@@ -129,36 +120,7 @@ const AllNavbar = () => {
                         <div className="px-1"><FontAwesomeIcon icon={faUser}/></div>
                         <div className="px-1"><FontAwesomeIcon icon={faCartShopping}/></div>
                         <div className="px-1"><FontAwesomeIcon icon={faMagnifyingGlass}/></div>
-
-
-                        {/*DropDown*/}
-                        {/*to edit*/}
-                        {/*   <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                Dropdown
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>*/}
-
-                        {/*<div className="rel">
-                            <div className="dropdown ">
-                                <button className="btn btn-secondary dropdown-toggle button" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span className="padding" id="country">LB</span>
-                                    <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/flags/4x3/fk.svg"
-                                         alt="" className="w13" id="flg"/>
-                                </button>
-                                <ul class="dropdown-menu overflow-scroll" id="flags">
-                                </ul>
-                            </div>
-                        </div>*/}
                     </div>
-                    {/*----end----*/}
                 </Container>
             </Navbar>
         </div>

@@ -1,8 +1,5 @@
 import './section5.css';
-import {DropdownItem} from "react-bootstrap";
-import Mobile from "../../assets/images/mobile.png";
 import Card3 from "../../component/card3/card3";
-
 import Wifi from "../../assets/images/wifi.png";
 import Network from "../../assets/images/network.png";
 import Cloud from "../../assets/images/cloud.png";

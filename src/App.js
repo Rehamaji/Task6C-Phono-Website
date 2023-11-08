@@ -1,7 +1,6 @@
 import './App.css';
 import Home from "./pages/home/home";
 import Feature from "./pages/feature/feature";
-import Section1 from './sections/section1/section1';
 import {Routes, Route} from "react-router-dom";
 import About from "./pages/about/about";
 
@@ -15,7 +14,7 @@ function App() {
             {/*    <Route path={'/categories'} element={<Section1/>}>Categories</Route>
               <Route path={'/users'} element={<Section1/>}></Route>*/}
           </Routes>
-          {/* <Home/>*/}
+           <Home/>
       </>
   );
 }

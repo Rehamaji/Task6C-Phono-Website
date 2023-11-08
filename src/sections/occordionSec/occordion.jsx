@@ -7,11 +7,6 @@ function AccordionSec() {
     return (
         <div className="bgBlue pt-5 pb-5 ">
             <div className="w-100 text-center">
-           {/*  <div className="w-100 text-center">
-                <h1 className="colorWhite">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
-            </div>
-            <p className="card-text row text-center pt-3 fs14 W-100 letterSpac"><small className=" colorWhite">SHOW YOURS TO THE WORLD</small></p>
-          */}
                 <Headers first="SEE WHY CUSTOMERS LOVE THE OUR MOBILES" second="SHOW YOURS TO THE WORLD" className1="colorWhite" className2="colorWhite" className3="colorWhite"/>
 
                 <div className="row w-100">
